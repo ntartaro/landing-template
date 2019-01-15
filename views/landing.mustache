@@ -1,38 +1,7 @@
 <!-- get_header('Page Name','Title')-->
 <!doctype html>
 <html class="no-js" lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>Landing Page Template</title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CPoppins:200,400,500,600,700%7CPlayfair+Display:400,700i" rel="stylesheet">
-		<link rel="icon" type="image/png" href="favicon.ico">
-		<!-- Place favicon.ico in the root directory -->
-		<link rel="apple-touch-icon" href="apple-touch-icon.png">
-		<!-- Icon foont list -->
-		<link rel="stylesheet" href=" /css/iconfont.css">
-		<link rel="stylesheet" href=" /css/font-awesome.min.css">
-		<!-- bootstrap -->
-		<link rel="stylesheet" href=" /css/bootstrap.min.css">
-		<!-- isotope -->
-		<link rel="stylesheet" href=" /css/isotope.css">
-		<!-- magnific -->
-		<link rel="stylesheet" href=" /css/magnific-popup.css">
-		<!-- owl carousel -->
-		<link rel="stylesheet" href=" /css/owl.carousel.min.css">
-		<link rel="stylesheet" href=" /css/owl.theme.default.min.css">
-		<!-- woocommerce -->
-		<link rel="stylesheet" href=" /css/woocommerce.css">
-		<!--For Plugins external css-->
-		<link rel="stylesheet" href=" /css/plugins.css" />
-		<!--Theme custom css -->
-		<link rel="stylesheet" href=" /css/style.css">
-		<!--Theme Responsive css-->
-		<link rel="stylesheet" href=" /css/responsive.css" />
-		<script src=" /js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-	</head>
+{{>templatehead}}
 <body class="woocommerce">		
 	<div id="preloader">
 		<div class="spinner">
@@ -43,327 +12,271 @@
 	{{>header}}
 	{{>login}}
 
-<section class="xs-screen-height xs-welcome-section xs-bg fundpress-welcome-section" style="background-image: url( /images/welcome-bg.png);">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-7">
-				<div class="xs-welcome-content fundpress-welcome-content-v2">
-					<div class="xs-welcome-wraper">
-						<h2>{{page.header.greeting}}</h2>
-						<ul class="fundpress-welcome-list-content">
-							<li>US $45,280.00<span class="d-block">Pledged</span></li>
-							<li>US $87,000.00<span class="d-block">Goal</span></li>
-						</ul>
-						<div class="xs-btn-wraper">
-							{{! <a href="#" class="xs-btn btn btn-primary round-btn">See idea</a>
-							<a href="#" class="xs-btn btn btn-outline-primary round-btn">start a campaign</a> }}
+	<section class="xs-screen-height xs-welcome-section xs-bg fundpress-welcome-section" style="background-image: url( /images/welcome-bg.png);">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7">
+					<div class="xs-welcome-content fundpress-welcome-content-v2">
+						<div class="xs-welcome-wraper">
+							<h2>{{page.header.greeting}}</h2>
+							<h4>{{page.header.subgreeting}}<h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5">
+					<div class="xs-welcome-content">
+						<div class="text-center fundpress-animate xs-welcome-wraper">
+							<img src="images/heropic.jpg" alt="">
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-5">
-				<div class="xs-welcome-content">
-					<div class="text-center fundpress-animate xs-welcome-wraper">
-						{{! <img src=" /images/speaker_1.png" alt=""> }}
+		</div>
+	</section>
+
+	<section  class="xs-section-padding fundpress-cause-matters-v2" data-scrollax-parent="true">
+		<div class="container">
+			<div class="fundpress-heading-title-v3 text-center wow fadeInUp" data-wow-duration="1s">
+				<div class="fundpress-heading-title-content">
+					<h2>{{page.features.title}}</h2>
+					<p>{{page.features.subtitle}}</p>
+				</div>
+				<span class="parallax-title" data-scrollax="properties: { translateY: '-250px' }">{{page.features.backgroundtext}}</span>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="fundpress-icon-with-square-service-v2 wow fadeInUp" data-wow-duration="1.2s">
+						<i class="icon icon-cogwheel-outline xs-check-mark"></i>
+						<h4>Most Money Raised. </h4>
+						<p>The advertising business is not an equal one. Our goal is to change that by highlighting female creatives globally.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fundpress-icon-with-square-service-v2 wow fadeInUp" data-wow-duration="1.4s">
+						<i class="icon icon-symbol xs-check-mark"></i>
+						<h4>Safety Garanted</h4>
+						<p>The advertising business is not an equal one. Our goal is to change that by highlighting female creatives globally.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fundpress-icon-with-square-service-v2 wow fadeInUp" data-wow-duration="1.6s">
+						<i class="icon icon-shopping-cart xs-check-mark"></i>
+						<h4>Product Sale</h4>
+						<p>The advertising business is not an equal one. Our goal is to change that by highlighting female creatives globally.</p>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
-<section  class="xs-section-padding fundpress-cause-matters-v2" data-scrollax-parent="true">
-	<div class="container">
-		<div class="fundpress-heading-title-v3 text-center wow fadeInUp" data-wow-duration="1s">
-			<div class="fundpress-heading-title-content">
-				<h2>TITLE</h2>
-				<p>LOTS OF WORDS BIG WORDS GO HERE SUB TEXT</p>
-			</div>
-			<span class="parallax-title" data-scrollax="properties: { translateY: '-250px' }">TESTING</span>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<div class="fundpress-icon-with-square-service-v2 wow fadeInUp" data-wow-duration="1.2s">
-					<i class="icon icon-cogwheel-outline xs-check-mark"></i>
-					<h4>Most Money Raised. </h4>
-					<p>The advertising business is not an equal one. Our goal is to change that by highlighting female creatives globally.</p>
+	<section class="xs-about-us-promo-section xs-content-section-padding fundpress-about-us-promo-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-6">
+					<div class="fundpress-inner-about-content">
+						<h2 class="color-navy-blue">{{page.about.title}}</h2>
+						<p>{{page.about.subtitle}}</p>
+						<a href="#" class="xs-sign-logo">
+							<img src="/images/signature_logo.png" alt="Fundpress author sign">
+						</a>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="fundpress-icon-with-square-service-v2 wow fadeInUp" data-wow-duration="1.4s">
-					<i class="icon icon-symbol xs-check-mark"></i>
-					<h4>Safety Garanted</h4>
-					<p>The advertising business is not an equal one. Our goal is to change that by highlighting female creatives globally.</p>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="fundpress-icon-with-square-service-v2 wow fadeInUp" data-wow-duration="1.6s">
-					<i class="icon icon-shopping-cart xs-check-mark"></i>
-					<h4>Product Sale</h4>
-					<p>The advertising business is not an equal one. Our goal is to change that by highlighting female creatives globally.</p>
-				</div>
-			</div>
-			{{! <div class="col-md-4">
-				<div class="fundpress-icon-with-square-service-v2 wow fadeInUp" data-wow-duration="1.8s">
-					<i class="icon icon-man xs-check-mark"></i>
-					<h4>Get Founded</h4>
-					<p>The advertising business is not an equal one. Our goal is to change that by highlighting female creatives globally.</p>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="fundpress-icon-with-square-service-v2 wow fadeInUp" data-wow-duration="2s">
-					<i class="icon icon-users2 xs-check-mark"></i>
-					<h4>1000+ Backers</h4>
-					<p>The advertising business is not an equal one. Our goal is to change that by highlighting female creatives globally.</p>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="fundpress-icon-with-square-service-v2 wow fadeInUp" data-wow-duration="2.2s">
-					<i class="icon icon-support xs-check-mark"></i>
-					<h4>24/7 Online Support</h4>
-					<p>The advertising business is not an equal one. Our goal is to change that by highlighting female creatives globally.</p>
-				</div>
-			</div> }}
-		</div>
-	</div>
-</section>
-
-
-<section class="xs-about-us-promo-section xs-content-section-padding fundpress-about-us-promo-section">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 col-lg-6">
-				<div class="fundpress-inner-about-content">
-					<h2 class="color-navy-blue">We are changing the way of making things possible.</h2>
-					<p>“FundPress is one of those platforms that gives you space to work with people who know you, love you, and support you.” </p>
-					<a href="#" class="xs-sign-logo">
-						<img src="/images/signature_logo.png" alt="Fundpress author sign">
-					</a>
-				</div>
-				<!--  
-					xs-inner-title 
-					xs-padding-right 
-					fundpress-inner-title 
-					xs-equal-height-and-content-center
-				-->
-			</div>
-			<div class="col-md-12 col-lg-6">
-				<div class="fundpress-about-promo-image xs-box-shadow">
-					<img src="/images/about.jpg" alt="">
-				</div>
-				<!-- 
-					fundpress-about-promo-image 
-					xs-box-shadow
-				 -->
-			</div>
-		</div>
-	</div>
-</section>	<!-- about us promo end -->
-
-<!-- news feeds version 2 section -->
-<section class="xs-section-padding xs-gray-bg-2" data-scrollax-parent="true">
-	<div class="container">
-		<div class="fundpress-heading-title-v3 text-center wow fadeInUp" data-wow-duration="1s">
-			<div class="fundpress-heading-title-content">
-				<h2>Get new  <span>updates</span></h2>
-				<p>A man of letters. A Platonic dreamer in a dream world. A masochist with <br> an idealized ego that denies reality.</p>
-			</div>
-			<span class="parallax-title" data-scrollax="properties: { translateY: '-250px' }">news</span>
-		</div><!-- section heading -->
-		<div class="row">
-			<div class="col-md-6 col-lg-4">
-				<div class="xs-mb-30 fundpress-from-journal fundpress-from-journal-v2 rounded wow fadeInUp" data-wow-duration="1.2s">
-					<div class="fundpress-item-header entry-thumbnail">
-						<img src=" /images/news-feed/news_1.jpg" alt="">
-					</div><!-- .fundpress-item-header END -->
-					<div class="fundpress-item-content xs-content-padding bg-color-white">
-						<div class="entry-header xs-mb-30">
-							<div class="post-author">
-								<ul class="xs-simple-tag xs-simple-tag-v2 fundpress-simple-tag author-links">
-									<li><span>By</span><a href="" class="color-blue-v2" rel="author">XpeedStudio</a></li>
-								</ul>
-							</div>
-							<h4 class="entry-title">
-								<a href="blog-details.html" class="xs-mb-0 xs-post-title color-navy-blue fundpress-post-title">Newman's Own Foundation teams up with FundPress for...</a>
-							</h4>
-						</div>
-
-						<span class="xs-separetor border-separetor xs-separetor-v2 fundpress-separetor xs-mb-20"></span>
-
-						<div class="entry-content xs-spilit-container xs-footer-content">
-							<div class="xs-col-6 text-left">
-								<span class="date">
-									<a href="" title="" rel="bookmark">
-										<i class="fa fa-calendar"></i>
-										<span class="entry-date xs-entry-date">12 May 2017</span>
-									</a>
-								</span>
-							</div>
-							<div class="xs-col-6 text-right">
-								<span class="categories-links">
-									<a href="" class="xs-blog-meta-tag blue-bg-v2" rel="category tag">technology</a>
-								</span>
-							</div>
-						</div>
-					</div><!-- .fundpress-item-content END -->
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-4">
-				<div class="xs-mb-30 fundpress-from-journal fundpress-from-journal-v2 rounded wow fadeInUp" data-wow-duration="1.4s">
-					<div class="fundpress-item-header entry-thumbnail">
-						<img src=" /images/news-feed/news_2.jpg" alt="">
-					</div><!-- .fundpress-item-header END -->
-					<div class="fundpress-item-content xs-content-padding bg-color-white">
-						<div class="entry-header xs-mb-30">
-							<div class="post-author">
-								<ul class="xs-simple-tag xs-simple-tag-v2 fundpress-simple-tag author-links">
-									<li><span>By</span><a href="" class="color-blue-v2" rel="author">Themewinter</a></li>
-								</ul>
-							</div>
-							<h4 class="entry-title">
-								<a href="blog-details.html" class="xs-mb-0 xs-post-title color-navy-blue fundpress-post-title">Specializes in creative projects with robust reward level feature</a>
-							</h4>
-						</div>
-
-						<span class="xs-separetor border-separetor xs-separetor-v2 fundpress-separetor xs-mb-20"></span>
-
-						<div class="entry-content xs-spilit-container xs-footer-content">
-							<div class="xs-col-6 text-left">
-								<span class="date">
-									<a href="" title="" rel="bookmark">
-										<i class="fa fa-calendar"></i>
-										<span class="entry-date xs-entry-date">13 February 2017</span>
-									</a>
-								</span>
-							</div>
-							<div class="xs-col-6 text-right">
-								<span class="categories-links">
-									<a href="" class="xs-blog-meta-tag blue-bg-v2" rel="category tag">Software</a>
-								</span>
-							</div>
-						</div>
-					</div><!-- .fundpress-item-content END -->
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-4">
-				<div class="xs-mb-30 fundpress-from-journal fundpress-from-journal-v2 rounded wow fadeInUp" data-wow-duration="1.6s">
-					<div class="fundpress-item-header entry-thumbnail">
-						<img src=" /images/news-feed/news_3.jpg" alt="">
-					</div><!-- .fundpress-item-header END -->
-					<div class="fundpress-item-content xs-content-padding bg-color-white">
-						<div class="entry-header xs-mb-30">
-							<div class="post-author">
-								<ul class="xs-simple-tag xs-simple-tag-v2 fundpress-simple-tag author-links">
-									<li><span>By</span><a href="" class="color-blue-v2" rel="author">Themes</a></li>
-								</ul>
-							</div>
-							<h4 class="entry-title">
-								<a href="blog-details.html" class="xs-mb-0 xs-post-title color-navy-blue fundpress-post-title">Can withdraw immediately add and deposits take 2-5 business</a>
-							</h4>
-						</div>
-
-						<span class="xs-separetor border-separetor xs-separetor-v2 fundpress-separetor xs-mb-20"></span>
-
-						<div class="entry-content xs-spilit-container xs-footer-content">
-							<div class="xs-col-6 text-left">
-								<span class="date">
-									<a href="" title="" rel="bookmark">
-										<i class="fa fa-calendar"></i>
-										<span class="entry-date xs-entry-date">8 March 2017</span>
-									</a>
-								</span>
-							</div>
-							<div class="xs-col-6 text-right">
-								<span class="categories-links">
-									<a href="" class="xs-blog-meta-tag blue-bg-v2" rel="category tag">innovation</a>
-								</span>
-							</div>
-						</div>
-					</div><!-- .fundpress-item-content END -->
+				<div class="col-md-12 col-lg-6">
+					<div class="fundpress-about-promo-image xs-box-shadow">
+						<img src="/images/about.jpg" alt="">
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section><!-- End news feeds version 2 section -->
+	</section>
 
-<section class="xs-section-padding xs-gray-bg-2 fundpress-contact-us-section xs-contact-us-section">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-10 content-center">
-				<div class="xs-section-heading fundpress-section-heading">
-					<div class="xs-heading-title fundpress-heading-title">
-						<h2 class="color-navy-blue">Get in touch</h2>
-						<span class="xs-separetor dashed-separetor fundpress-separetor"></span>
-						<p>Fundpress site thoughtfully designed for real humans which means the best user experience for your entire community of donors, fundraisers, customers, and staff.</p>
-					</div><!-- .xs-heading-title .fundpress-heading-title .xs-col-9 END -->
-				</div><!-- .xs-section-heading .fundpress-section-heading .xs-spilit-container END -->
+	<section class="xs-section-padding xs-gray-bg-2" data-scrollax-parent="true">
+		<div class="container">
+			<div class="fundpress-heading-title-v3 text-center wow fadeInUp" data-wow-duration="1s">
+				<div class="fundpress-heading-title-content">
+					<h2>{{page.news.title}}</h2>
+					<p>{{page.news.subtitle}}</p>
+				</div>
+				<span class="parallax-title" data-scrollax="properties: { translateY: '-250px' }">{{page.news.backgroundtext}}</span>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-8 content-center">
-				<div class="xs-contact-form-wraper">
-					<form action="#" method="POST" id="xs-contact-form">
-						<div class="row xs-margin-0 xs-mb-30">
-							<div class="col-md-6 xs-padding-0 xs-pr-15">
-								<div class="xs-input-group">
-									<label for="xs_contact_name">Name</label>
-									<div class="xs-input-group-addon">
-										<i class="fa fa-user color-green xs-input-addon"></i>
-										<input type="text" name="name" id="xs_contact_name" class="xs-input-control" placeholder="Enter your name...">
-									</div>
+			<div class="row">
+				<div class="col-md-6 col-lg-4">
+					<div class="xs-mb-30 fundpress-from-journal fundpress-from-journal-v2 rounded wow fadeInUp" data-wow-duration="1.2s">
+						<div class="fundpress-item-header entry-thumbnail">
+							<img src=" /images/news-feed/news_1.jpg" alt="">
+						</div>
+						<div class="fundpress-item-content xs-content-padding bg-color-white">
+							<div class="entry-header xs-mb-30">
+								<div class="post-author">
+									<ul class="xs-simple-tag xs-simple-tag-v2 fundpress-simple-tag author-links">
+										<li><span>By</span><a href="" class="color-blue-v2" rel="author">XpeedStudio</a></li>
+									</ul>
 								</div>
+								<h4 class="entry-title">
+									<a href="blog-details.html" class="xs-mb-0 xs-post-title color-navy-blue fundpress-post-title">Newman's Own Foundation teams up with FundPress for...</a>
+								</h4>
 							</div>
-							<div class="col-md-6 xs-padding-0 xs-pl-15">
-								<div class="xs-input-group">
-									<label for="xs_contact_email">email</label>
-									<div class="xs-input-group-addon">
-										<i class="fa fa-envelope-o color-green xs-input-addon"></i>
-										<input type="email" name="email" id="xs_contact_email" class="xs-input-control" placeholder="Enter your email...">
-									</div>
+
+							<span class="xs-separetor border-separetor xs-separetor-v2 fundpress-separetor xs-mb-20"></span>
+
+							<div class="entry-content xs-spilit-container xs-footer-content">
+								<div class="xs-col-6 text-left">
+									<span class="date">
+										<a href="" title="" rel="bookmark">
+											<i class="fa fa-calendar"></i>
+											<span class="entry-date xs-entry-date">12 May 2017</span>
+										</a>
+									</span>
+								</div>
+								<div class="xs-col-6 text-right">
+									<span class="categories-links">
+										<a href="" class="xs-blog-meta-tag blue-bg-v2" rel="category tag">technology</a>
+									</span>
 								</div>
 							</div>
 						</div>
-						<div class="xs-input-group xs-mb-30">
-							<label for="xs_contact_subject">subject</label>
-							<div class="xs-input-group-addon">
-								<i class="fa fa-sticky-note color-green xs-input-addon"></i>
-								<input type="text" name="subject" id="xs_contact_subject" class="xs-input-control" placeholder="Subject">
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="xs-mb-30 fundpress-from-journal fundpress-from-journal-v2 rounded wow fadeInUp" data-wow-duration="1.4s">
+						<div class="fundpress-item-header entry-thumbnail">
+							<img src=" /images/news-feed/news_2.jpg" alt="">
+						</div>
+						<div class="fundpress-item-content xs-content-padding bg-color-white">
+							<div class="entry-header xs-mb-30">
+								<div class="post-author">
+									<ul class="xs-simple-tag xs-simple-tag-v2 fundpress-simple-tag author-links">
+										<li><span>By</span><a href="" class="color-blue-v2" rel="author">Themewinter</a></li>
+									</ul>
+								</div>
+								<h4 class="entry-title">
+									<a href="blog-details.html" class="xs-mb-0 xs-post-title color-navy-blue fundpress-post-title">Specializes in creative projects with robust reward level feature</a>
+								</h4>
+							</div>
+
+							<span class="xs-separetor border-separetor xs-separetor-v2 fundpress-separetor xs-mb-20"></span>
+
+							<div class="entry-content xs-spilit-container xs-footer-content">
+								<div class="xs-col-6 text-left">
+									<span class="date">
+										<a href="" title="" rel="bookmark">
+											<i class="fa fa-calendar"></i>
+											<span class="entry-date xs-entry-date">13 February 2017</span>
+										</a>
+									</span>
+								</div>
+								<div class="xs-col-6 text-right">
+									<span class="categories-links">
+										<a href="" class="xs-blog-meta-tag blue-bg-v2" rel="category tag">Software</a>
+									</span>
+								</div>
 							</div>
 						</div>
-						<div class="xs-massage-group xs-mb-30">
-							<label for="x_contact_massage">Message</label>
-							<div class="xs-massage-group-addon">
-								<i class="fa fa-pencil color-green xs-input-addon"></i>
-								<textarea name="massage" id="x_contact_massage" class="xs-textarea-control" cols="30" rows="10" placeholder="Enter your message..."></textarea>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="xs-mb-30 fundpress-from-journal fundpress-from-journal-v2 rounded wow fadeInUp" data-wow-duration="1.6s">
+						<div class="fundpress-item-header entry-thumbnail">
+							<img src=" /images/news-feed/news_3.jpg" alt="">
+						</div>
+						<div class="fundpress-item-content xs-content-padding bg-color-white">
+							<div class="entry-header xs-mb-30">
+								<div class="post-author">
+									<ul class="xs-simple-tag xs-simple-tag-v2 fundpress-simple-tag author-links">
+										<li><span>By</span><a href="" class="color-blue-v2" rel="author">Themes</a></li>
+									</ul>
+								</div>
+								<h4 class="entry-title">
+									<a href="blog-details.html" class="xs-mb-0 xs-post-title color-navy-blue fundpress-post-title">Can withdraw immediately add and deposits take 2-5 business</a>
+								</h4>
+							</div>
+
+							<span class="xs-separetor border-separetor xs-separetor-v2 fundpress-separetor xs-mb-20"></span>
+
+							<div class="entry-content xs-spilit-container xs-footer-content">
+								<div class="xs-col-6 text-left">
+									<span class="date">
+										<a href="" title="" rel="bookmark">
+											<i class="fa fa-calendar"></i>
+											<span class="entry-date xs-entry-date">8 March 2017</span>
+										</a>
+									</span>
+								</div>
+								<div class="xs-col-6 text-right">
+									<span class="categories-links">
+										<a href="" class="xs-blog-meta-tag blue-bg-v2" rel="category tag">innovation</a>
+									</span>
+								</div>
 							</div>
 						</div>
-						<div class="xs-submit-wraper content-center">
-							<input type="submit" name="submit" value="get a query" id="xs_contact_submit" class="xs-submit-btn">
-						</div>
-					</form>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
-{{>footer}}
-	<script src=" /js/jquery-3.2.1.min.js"></script>
-	<script src=" /js/plugins.js"></script>
-	<script src=" /js/Popper.js"></script>
-	<script src=" /js/bootstrap.min.js"></script>
-	<script src=" /js/jquery.easing.1.3.js"></script>
-	<script src=" /js/isotope.pkgd.min.js"></script>
-	<script src=" /js/jquery.countdown.min.js"></script>
-	<script src=" /js/jquery.magnific-popup.min.js"></script>
-	<script src=" /js/owl.carousel.min.js"></script>
-	<script src=" /js/parallax.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyCy7becgYuLwns3uumNm6WdBYkBpLfy44k"></script>
-	<script src=" /js/jquery.easypiechart.min.js"></script>
-	<script src=" /js/spectragram.min.js"></script>
-	<script src=" /js/jquery.waypoints.min.js"></script>
-	<script src=" /js/scrollax.js"></script>
+	<section class="xs-section-padding xs-gray-bg-2 fundpress-contact-us-section xs-contact-us-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 content-center">
+					<div class="xs-section-heading fundpress-section-heading">
+						<div class="xs-heading-title fundpress-heading-title">
+							<h2 class="color-navy-blue">{{page.contact.title}}</h2>
+							<span class="xs-separetor dashed-separetor fundpress-separetor"></span>
+							<p>{{page.contact.subtitle}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 content-center">
+					<div class="xs-contact-form-wraper">
+						<form action="#" method="POST" id="xs-contact-form">
+							<div class="row xs-margin-0 xs-mb-30">
+								<div class="col-md-6 xs-padding-0 xs-pr-15">
+									<div class="xs-input-group">
+										<label for="xs_contact_name">Name</label>
+										<div class="xs-input-group-addon">
+											<i class="fa fa-user color-green xs-input-addon"></i>
+											<input type="text" name="name" id="xs_contact_name" class="xs-input-control" placeholder="Enter your name...">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 xs-padding-0 xs-pl-15">
+									<div class="xs-input-group">
+										<label for="xs_contact_email">email</label>
+										<div class="xs-input-group-addon">
+											<i class="fa fa-envelope-o color-green xs-input-addon"></i>
+											<input type="email" name="email" id="xs_contact_email" class="xs-input-control" placeholder="Enter your email...">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="xs-submit-wraper content-center">
+								<input type="submit" name="submit" value="Submit" id="xs_contact_submit" class="xs-submit-btn">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-	<script src=" /js/main.js"></script>
+	{{>footer}}
+	<script src="/js/jquery-3.2.1.min.js"></script>
+	<script src="/js/plugins.js"></script>
+	<script src="/js/Popper.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/jquery.easing.1.3.js"></script>
+	<script src="/js/isotope.pkgd.min.js"></script>
+	<script src="/js/jquery.countdown.min.js"></script>
+	<script src="/js/jquery.magnific-popup.min.js"></script>
+	<script src="/js/owl.carousel.min.js"></script>
+	<script src="/js/parallax.min.js"></script>
+	<script src="/js/jquery.easypiechart.min.js"></script>
+	<script src="/js/spectragram.min.js"></script>
+	<script src="/js/jquery.waypoints.min.js"></script>
+	<script src="/js/scrollax.js"></script>
+	<script src="/js/main.js"></script>
 </body>
 </html>
