@@ -8,7 +8,25 @@
     "subtitle": "Subtitle goes here",
     "backgroundtext": "Features",
     "list": [
-        
+      {
+        "first": {
+          "title": "Test Title One",
+          "subtitle": "Test Subtitle One",
+          "icon": "icon-cogwheel-outline"
+        }
+      }, {
+        "second": {
+          "title": "Test Title Two",
+          "subtitle": "Test Subtitle Two",
+          "icon": "icon-symbol"
+        }
+      }, {
+        "third" : {
+          "title": "Test Title Three",
+          "subtitle": "Test Subtitle Three",
+          "icon": "icon-shopping-cart"
+        }
+      }
     ]
   },
   "about": {

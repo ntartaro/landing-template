@@ -1,7 +1,8 @@
-<!-- get_header('Page Name','Title')-->
 <!doctype html>
 <html class="no-js" lang="en">
-{{>templatehead}}
+
+{{>head}}
+
 <body class="woocommerce">		
 	<div id="preloader">
 		<div class="spinner">
@@ -9,10 +10,11 @@
 			<div class="double-bounce2"></div>
 		</div>
 	</div>
+
 	{{>header}}
 	{{>login}}
 
-	<section class="xs-screen-height xs-welcome-section xs-bg fundpress-welcome-section" style="background-image: url( /images/welcome-bg.png);">
+	<section class="xs-screen-height xs-welcome-section xs-bg fundpress-welcome-section" style="background-image: url(/images/welcome-bg.png);">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-7">
@@ -46,23 +48,23 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="fundpress-icon-with-square-service-v2 wow fadeInUp" data-wow-duration="1.2s">
-						<i class="icon icon-cogwheel-outline xs-check-mark"></i>
-						<h4>Most Money Raised. </h4>
-						<p>The advertising business is not an equal one. Our goal is to change that by highlighting female creatives globally.</p>
+						<i class="icon {{page.features.list.0.first.icon}} xs-check-mark"></i>
+						<h4>{{page.features.list.0.first.title}}</h4>
+						<p>{{page.features.list.0.first.subtitle}}</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="fundpress-icon-with-square-service-v2 wow fadeInUp" data-wow-duration="1.4s">
-						<i class="icon icon-symbol xs-check-mark"></i>
-						<h4>Safety Garanted</h4>
-						<p>The advertising business is not an equal one. Our goal is to change that by highlighting female creatives globally.</p>
+						<i class="icon {{page.features.list.1.second.icon}} xs-check-mark"></i>
+						<h4>{{page.features.list.1.second.title}}</h4>
+						<p>{{page.features.list.1.second.subtitle}}</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="fundpress-icon-with-square-service-v2 wow fadeInUp" data-wow-duration="1.6s">
-						<i class="icon icon-shopping-cart xs-check-mark"></i>
-						<h4>Product Sale</h4>
-						<p>The advertising business is not an equal one. Our goal is to change that by highlighting female creatives globally.</p>
+						<i class="icon {{page.features.list.2.third.icon}} xs-check-mark"></i>
+						<h4>{{page.features.list.2.third.title}}</h4>
+						<p>{{page.features.list.2.third.subtitle}}</p>
 					</div>
 				</div>
 			</div>
@@ -83,7 +85,7 @@
 				</div>
 				<div class="col-md-12 col-lg-6">
 					<div class="fundpress-about-promo-image xs-box-shadow">
-						<img src="/images/about.jpg" alt="">
+						<img src="/images/aboutpic.jpg" alt="">
 					</div>
 				</div>
 			</div>
@@ -103,7 +105,7 @@
 				<div class="col-md-6 col-lg-4">
 					<div class="xs-mb-30 fundpress-from-journal fundpress-from-journal-v2 rounded wow fadeInUp" data-wow-duration="1.2s">
 						<div class="fundpress-item-header entry-thumbnail">
-							<img src=" /images/news-feed/news_1.jpg" alt="">
+							<img src="/images/news1.jpg" alt="">
 						</div>
 						<div class="fundpress-item-content xs-content-padding bg-color-white">
 							<div class="entry-header xs-mb-30">
@@ -140,7 +142,7 @@
 				<div class="col-md-6 col-lg-4">
 					<div class="xs-mb-30 fundpress-from-journal fundpress-from-journal-v2 rounded wow fadeInUp" data-wow-duration="1.4s">
 						<div class="fundpress-item-header entry-thumbnail">
-							<img src=" /images/news-feed/news_2.jpg" alt="">
+							<img src="/images//news2.jpg" alt="">
 						</div>
 						<div class="fundpress-item-content xs-content-padding bg-color-white">
 							<div class="entry-header xs-mb-30">
@@ -177,7 +179,7 @@
 				<div class="col-md-6 col-lg-4">
 					<div class="xs-mb-30 fundpress-from-journal fundpress-from-journal-v2 rounded wow fadeInUp" data-wow-duration="1.6s">
 						<div class="fundpress-item-header entry-thumbnail">
-							<img src=" /images/news-feed/news_3.jpg" alt="">
+							<img src="/images/news3.jpg" alt="">
 						</div>
 						<div class="fundpress-item-content xs-content-padding bg-color-white">
 							<div class="entry-header xs-mb-30">
@@ -263,6 +265,7 @@
 	</section>
 
 	{{>footer}}
+
 	<script src="/js/jquery-3.2.1.min.js"></script>
 	<script src="/js/plugins.js"></script>
 	<script src="/js/Popper.js"></script>
