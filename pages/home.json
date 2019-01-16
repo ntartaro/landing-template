@@ -4,7 +4,7 @@
     "subgreeting": "Subgreeting goes here"
   },
   "features": {
-    "title": "Title goes here",
+    "title": "Features title goes here",
     "subtitle": "Subtitle goes here",
     "backgroundtext": "Features",
     "list": [
@@ -30,16 +30,16 @@
     ]
   },
   "about": {
-    "title": "Title goes here",
+    "title": "About Us title goes here",
     "subtitle": "Subtitle goes here"
   },
   "news": {
-    "title": "Title goes here",
+    "title": "News title goes here",
     "subtitle": "Subtitle goes here",
     "backgroundtext": "News"
   },
   "contact": {
-    "title": "Title goes here",
+    "title": "Contact title goes here",
     "subtitle": "Subtitle goes here"
   }
 }

@@ -12,7 +12,6 @@
 	</div>
 
 	{{>header}}
-	{{>login}}
 
 	<section class="xs-screen-height xs-welcome-section xs-bg fundpress-welcome-section" style="background-image: url(/images/welcome-bg.png);">
 		<div class="container">
@@ -36,7 +35,7 @@
 		</div>
 	</section>
 
-	<section  class="xs-section-padding fundpress-cause-matters-v2" data-scrollax-parent="true">
+	<section class="xs-section-padding fundpress-cause-matters-v2 features" data-scrollax-parent="true">
 		<div class="container">
 			<div class="fundpress-heading-title-v3 text-center wow fadeInUp" data-wow-duration="1s">
 				<div class="fundpress-heading-title-content">
@@ -71,16 +70,13 @@
 		</div>
 	</section>
 
-	<section class="xs-about-us-promo-section xs-content-section-padding fundpress-about-us-promo-section">
+	<section class="xs-about-us-promo-section xs-content-section-padding fundpress-about-us-promo-section about">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-lg-6">
 					<div class="fundpress-inner-about-content">
 						<h2 class="color-navy-blue">{{page.about.title}}</h2>
 						<p>{{page.about.subtitle}}</p>
-						<a href="#" class="xs-sign-logo">
-							<img src="/images/signature_logo.png" alt="Fundpress author sign">
-						</a>
 					</div>
 				</div>
 				<div class="col-md-12 col-lg-6">
@@ -92,7 +88,7 @@
 		</div>
 	</section>
 
-	<section class="xs-section-padding xs-gray-bg-2" data-scrollax-parent="true">
+	<section class="xs-section-padding xs-gray-bg-2 news" data-scrollax-parent="true">
 		<div class="container">
 			<div class="fundpress-heading-title-v3 text-center wow fadeInUp" data-wow-duration="1s">
 				<div class="fundpress-heading-title-content">
@@ -217,7 +213,7 @@
 		</div>
 	</section>
 
-	<section class="xs-section-padding xs-gray-bg-2 fundpress-contact-us-section xs-contact-us-section">
+	<section class="xs-section-padding xs-gray-bg-2 fundpress-contact-us-section xs-contact-us-section contact">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 content-center">
@@ -281,5 +277,17 @@
 	<script src="/js/jquery.waypoints.min.js"></script>
 	<script src="/js/scrollax.js"></script>
 	<script src="/js/main.js"></script>
+	<script>
+		(function(){
+			$(".nav-menu-item").click(function(event){
+				console.log("clicked")
+				var scrollTo = "." + event.target.id 
+				console.log(scrollTo)
+				$("html, body").animate({
+					scrollTop: $(scrollTo).offset().top 
+					}, 700);
+			});
+		})()
+	</script>
 </body>
 </html>
